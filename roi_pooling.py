@@ -4,7 +4,7 @@ from torchvision.ops import roi_pool
 from compiler import *
 
 assert torch.backends.mps.is_available()
-mps_device = torch.device("mps")  # Device object representing GPU.
+mps_device = torch.device("mps")  
 
 # Wrapper over the custom MPS ROI Pooling kernel.
 class MPSROIPooling(nn.Module):
